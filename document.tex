@@ -1,0 +1,165 @@
+\documentclass[a4paper,12pt]{scrbook}
+
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}[dvips,pdftex]
+\usepackage[english , polish]{babel}
+
+\author{\textbf{\textit{Mikolaj Melnyk}}}
+\title{\textit{\LaTeX}}
+\date{\texttt{\today}}
+
+% Część główna
+% Początek
+\begin{document}
+	
+\maketitle
+\tableofcontents{}
+\part{Wprowadzeni do \LaTeX}
+	
+\chapter{Rozdział - 1}	
+\section{Pojęcia glówne o \LaTeX}
+
+\subsection{Pojecia}
+	
+\textbf{LaTeX – oprogramowanie do zautomatyzowanego składu tekstu, a także związany z nim język znaczników, służący do formatowania dokumentów tekstowych i tekstowo-graficznych (na przykład: broszur, artykułów, książek, plakatów, prezentacji, a nawet stron HTML)..}
+	
+\subsection{Nazwa}
+	
+\textsl{Poprawna wymowa nazwy to latech lub ewentualnie lejtech. Zgermanizowana forma „lejtek” jest niepoprawna. Wymowa wynika ze źródłosłowu – ostatnia litera to greckie chi, jako że nazwa TeX wywodzi się z greckiego słowa texvn, oznaczającego umiejętność, sztukę, technikę.}
+	
+	
+\section{Zasada działania LaTeX-a}
+	
+\textit{Tworzenie tekstu w LaTeX-u opiera się na zasadzie WYSIWYM (What You See Is What You Mean – to, co widzisz, jest tym, o czym myślisz). Od zasady WYSIWYG odróżnia go to, że autor tekstu określa jedynie logiczną strukturę dokumentu (tzn. zaznacza, gdzie zaczyna się rozdział, co jest przypisem itp.), natomiast samym graficznym „ułożeniem” tekstu na stronie zajmuje się TeX, zwalniając tym samym użytkownika z tego zadania.	
+\newline{\newline{LaTeX zajmuje się również odpowiednim rozmieszczeniem i sformatowaniem wzorów matematycznych, rysunków i diagramów, zwalniając użytkownika ze żmudnej pracy związanej z integracją tych elementów z właściwym tekstem.}}}
+	
+\section{Obszar zastosowań}
+
+\underline{LaTeX} - ułatwia skład tekstu pozwalając autorowi skupić się na treści i strukturze tekstu. Obecnie zwykle nie pisze się tekstu źródłowego w „czystym” TeX-u (plain TeX), używa się LaTeX-a wraz z dodatkowymi pakietami określanymi mianem klas. Klasy ułatwiają pracę nad wyspecjalizowanymi rodzajami dokumentów – na przykład publikacjami zawierającymi rozbudowane wzory matematyczne lub chemiczne. Ponadto, dla ułatwienia współpracy z autorami artykułów, czasopisma składane w LaTeX-u mogą dostarczać własne wyspecjalizowane klasy. Przykładem może być klasa RevTeX propagowana przez czasopisma naukowe z grupy \underline{Physical Review}. Dzięki tej metodzie pracy ani autor artykułu, ani związany z wydawnictwem redaktor, nie muszą koncentrować się na szczegółach technicznych specyficznych dla danego czasopisma (np. formatowaniu danych bibliograficznych, tabel, podpisów pod rysunkami, standardach numerowania wzorów i nagłówków itp.).
+
+% Część końcowa
+	
+	
+\section{Kod żródłowy}
+	
+\verb "Kod źródlowy można utworzyć dowolnym edytorem tekstu".
+\newline{Dla wygody warto wybrać edytor podświetlający składnię języka. Istnieją również wyspecjalizowane środowiska ułatwiające pracę.}
+	
+	
+\section{\TeX}
+
+\Large{\TeX  komputerowy system profesjonalnego składu drukarskiego, obejmujący zarówno specjalny język, jak i kompilator przygotowujący pliki w formacie DVI, oraz programy przekształcające pliki DVI na format wymaganych przez urządzenia graficzne (drukarki, naświetlarki). TeX do składu nie używa plików z fontami, jak dzieje się to w większości programów do składu tekstu, lecz plików z metrykami fontów, czyli informacjami o wymiarach znaków, odstępach między nimi oraz innymi zależnościami, ale bez opisu kształtów znaków. Metryki fontów zapisane są w plikach TFM (TeX Font Metric). Dopiero program drukujący dodaje do informacji z pliku DVI opisy fontów i przygotowuje dane w formacie urządzenia drukującego.
+	
+	Używa się go przy składaniu tekstów ukowych (np. matematycznych), ponieważ umożliwia budowanie złożonych wyrażeń, w tym skomplikowanych wzorów matematycznych. Nie mniej ważny jest szeroki zakres dostępnych gotowych pakietów poleceń rozwiązujących problemy związane z tworzeniem publikacji, sąna to np. automatyczne numerowanie równań, tworzenie skorowidzów, tabel, spisu skrótów, wstawianie ilustracji}
+
+\section{\newline{Powstanie i rozwój}}
+
+\normalsize{TeX został napisany w języku WEB, który z kolei produkuje programy w języku Pascal. Przy okazji powstał język METAFONT, przeznaczony do opisu fontów, w którym zostały stworzone fonty domyślnie używane przez TeX – ich krój nosi nazwę Computer Modern.
+
+Program powstał w Stanach Zjednoczonych na Uniwersytecie Stanforda. Jego twórcą jest Donald E. Knuth, amerykański matematyk i informatyk. Program powstał, ponieważ prof. Knuth nie był zadowolony z wyglądu swojej książki The Art of Computer Programming. Postanowił wziąć sprawy w swoje ręce i stworzyć język programowania, który umożliwiłby skład tekstu wysokiej jakości. Początkowo profesor zakładał, że prace zajmą najwyżej pół roku, jednak jego oszacowanie było błędne – ostatecznie program został ukończony po ok. ośmiu latach, w 1985 roku. Z tą chwilą rozwój programu został zatrzymany, były poprawiane jedynie błędy, a numer wersji został określony na 2.0.
+
+Profesor Knuth wyznaczył nagrodę pieniężną za każdy znaleziony w jego programie błąd. W roku 1985 nagroda wynosiła 1 cent, była podwajana co rok aż do 327 dolarów i 68 centów.
+
+Począwszy od wersji 3 systemu TeX, to jest od roku 1990, każda kolejna podwersja oznaczana jest kolejnym dziesiętnym przybliżeniem liczby pi, co oznacza, że w systemie wprowadzane są wyłącznie poprawki przybliżające system do doskonałości. Bieżąca wersja, opublikowana w styczniu 2021 roku, ma numer 3.14. Knuth w swoistym testamencie polecił, aby z chwilą jego śmierci numer wersji określić jako pi i nie dokonywać już żadnych zmian.
+
+
+
+%Zdefiniowanie wyliczenia.
+\chapter{Rozdział 2}
+\section{Srodowiska}
+\begin{enumerate}
+\subsection{Wyliczenia}
+\item po pierwsze
+\item po drugie
+\item koniec
+\end{enumerate}
+%Okreslanie wypunktowania
+
+\begin{itemize}
+\subsection{Wypunktowania}
+\item po pierwsze
+\item po drugie
+\item koniec
+\end{itemize}
+
+%rysunek
+\section{rysunek :}
+
+\begin{figure}[!htbp]
+	
+\includegraphics[width=16cm]{C:/Users/halin/Desktop/NDP/cw4/Latek.png}
+
+\begin{center}
+\caption{,,\LaTeX'' rysunek} \label{rysunek}
+\end{center}
+\end{figure}
+\clearpage
+
+\section{kroj pisma}
+\Large{Tabela :}
+
+\begin{table}[!htbp]
+\caption{Przykladowa tabela}
+\label{tabela}
+\centering
+
+\vspace{3mm}
+\begin{tabular}{|c c|l|} \hline
+t1 & t0 & data type                 \\ \hline
+ 0 &  0 & {\em bool} (\verb$B$)     \\
+ 0 &  1 & ---                       \\
+ 1 &  0 & {\em integer} (\verb$I$)  \\
+ 1 &  1	& {\em long} (\verb$L$)     \\ \hline
+
+\end{tabular}
+\end{table}
+ 
+ 
+\section{Wzory matematyczne:}
+%zd16.
+\large{Wzór na pole koła :}
+\begin{equation}
+S=\pi r^{2}
+\end{equation}\newline
+
+%zd17.
+Wzór 1 :\newline
+
+\begin{equation}
+     \Delta = b^2 - 4 \cdot a \cdot c
+\end{equation}\newline
+
+Wzór 2 i 3 :\newline
+\begin{eqnarray}
+	{x_1 = \frac{-b - \sqrt{Delta}}{2 \cdot a}} \\
+	{x_2 = \frac{-b + \sqrt{Delta}}{2 \cdot a}} \\
+\end{eqnarray}
+
+\subsection{Odwolania}
+%zd18.
+
+Na rysunku \ref{rysunek}, który pojawił się w rozdziale : kroj pisma , na stronie \pageref{rysunek} pojawił się obrazek , który można zobaczyć w książce Latex-a. Wzór matematyczny na pole koła można znależć na stronie ...
+
+
+%zd19.
+\footnote{\large`{Cos tu ma miało by być xD}}
+ 
+ 
+%zd20.
+\subsection{Znaki specjalne}
+
+\$, \#, \%, \^{}, \&, '', \verb|[|, \verb 
+
+\subsection{Spisy :}
+
+\begin{verbatim}
+\tableofcontents
+\listoffigures
+\listoftables
+\end{verbatim}
+
+\part{Wprowadzeni do \LaTeX , częsć 2}
+%Koniec dokumentu
+\end{document}
